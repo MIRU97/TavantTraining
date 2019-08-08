@@ -4,7 +4,7 @@ package day1;
 
 	public class Factorial {
 
-	static int CalcFact(int j)
+	int CalculateFactorial(int j)
 
 		{
 
@@ -24,15 +24,15 @@ package day1;
 
 	        public static void main(String[] args) {
 
-			Scanner sc = new Scanner(System.in);
+			Scanner scanner = new Scanner(System.in);
 
 			int x;
 
-			x=sc.nextInt();
+			x=scanner.nextInt();
 
-			System.out.println("Factorial = "+CalcFact(x));
+			System.out.println("Factorial = "+CalculateFactorial(x));
 
-			sc.close();
+			scanner.close();
 
 			}
 }
