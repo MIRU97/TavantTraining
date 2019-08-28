@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MarkUsingSwitch {
 	
-		 public static String MarkGrad(int p)
+		 public String MarkValidator(int marks)
 		 {
 
 			 for(int i=1;i<=4;i++)
@@ -15,19 +15,19 @@ public class MarkUsingSwitch {
 
 				 {
 
-				 case 1: if(p>=90) return "Grade A";
+				 case 1: if(marks>=90) return "Grade A";
 
 				 break;
 
-				 case 2: if(p>=75&&p<90) return "Grade B";
+				 case 2: if(marks>=75&&marks<90) return "Grade B";
 
 				 break;
 
-				 case 3: if(p>=60&&p<75) return "Grade C";
+				 case 3: if(marks>=60&&marks<75) return "Grade C";
 
 				 break;
 
-				 case 4: if(p<60) return "Grade D";	 
+				 case 4: if(marks<60) return "Grade D";	 
 				 }
 
 			 }
@@ -36,15 +36,17 @@ public class MarkUsingSwitch {
 		 
 		public static void main(String[] args) {
 
-			Scanner sc =new Scanner(System.in);
+			Scanner scanner =new Scanner(System.in);
 
 			int m;
 			
-			m=sc.nextInt();
+			m=scanner.nextInt();
 
-			System.out.println(MarkGrad(m));
+			MarkUsingSwitch out=new MarkUsingSwitch();
+			
+			System.out.println(out.MarkValidator(m));
 
-			sc.close();
+			scanner.close();
 		}
 	}
 
