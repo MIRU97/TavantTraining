@@ -4,21 +4,21 @@ package day1;
 
 	public class Factorial {
 
-	int CalculateFactorial(int j)
+	int CalculateFactorial(int value)
 
 		{
 
-			int i,f=1;
+			int i,fact=1;
 
-			for(i=1;i<=j;i++)
+			for(i=1;i<=value;i++)
 
 			{
 
-			f=f*i;
+			fact=fact*i;
 
 			}
 
-	 return f;
+	 return fact;
 
 		}
 
@@ -26,11 +26,13 @@ package day1;
 
 			Scanner scanner = new Scanner(System.in);
 
-			int x;
+			int factorial;
 
-			x=scanner.nextInt();
-
-			System.out.println("Factorial = "+CalculateFactorial(x));
+			factorial=scanner.nextInt();
+			
+                        Factorial out=new Factorial();
+			
+			System.out.println("Factorial = "+out.CalculateFactorial(factorial));
 
 			scanner.close();
 
