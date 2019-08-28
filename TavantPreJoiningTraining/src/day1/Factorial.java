@@ -4,7 +4,7 @@ package day1;
 
 	public class Factorial {
 
-	int CalculateFactorial(int value)
+	public int CalculateFactorial(int value)
 
 		{
 
