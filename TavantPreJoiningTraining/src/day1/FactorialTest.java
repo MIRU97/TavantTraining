@@ -11,7 +11,7 @@ class FactorialTest {
 	{
 		Factorial x = new Factorial();
 
-		int output = x.CalcFact(4);
+		int output = x.CalculateFactorial(4);
 
 		assertEquals(24,output);
 	}
