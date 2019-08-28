@@ -4,36 +4,38 @@ import java.util.Scanner;
 
 public class Temperature {
 
-		  static double ConvToFaren(double c)	{
+		  public double ConvertToFarenheit(double celsius)	{
 
-			return (c*9/5)+32;
+			return (celsius*9/5)+32;
 	}
-		  static double ConvToCelsi(double f)
+		  public double ConvertToCelsius(double farenheit)
 
 		{
 
-			return (f-32)*5/9;
+			return (farenheit-32)*5/9;
 
 		}
 
 		public static void main(String[] args) {
 
-			Scanner sc= new Scanner(System.in);
+			Scanner scanner= new Scanner(System.in);
 
-	System.out.println("Celsi =" );
+	System.out.println("Celsius =" );
 
-	double c,f;
+	double celsius,farenheit;
 
-	c=sc.nextDouble();
+	celsius=scanner.nextDouble();
 
-	System.out.println("Faren =" );
+	System.out.println("Farenheit =" );
 
-	f=sc.nextDouble();
+	farenheit=scanner.nextDouble();
 
-	System.out.println(" Convert value ="+ConvToFaren(c));
+        Temperature out=new Temperature();
 
-	System.out.println(" Convert value ="+ConvToCelsi(f));
+	System.out.println(" Converted value ="+out.ConvertToFarenheit(celsius));
 
-	sc.close();
+	System.out.println(" Converted value ="+out.ConvertToCelsius(farenheit));
+
+	scanner.close();
 		}
 }
