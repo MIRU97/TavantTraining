@@ -2,14 +2,14 @@ package day1;
 
 import java.util.Scanner;
 
-public class SumOfNos {
+public class SumOfNumbers {
 
-	static int SumOfEvenNos(int s,int f)
+	 int SumOfEvenNumbers(int firstnumber,int lastnumber)
 
 			{
               	int i,m=0;
 
-				for(i=s;i<=f;i++)
+				for(i=firstnumber;i<=lastnumber;i++)
 				{
                  	if(i%2==0)
 					{
@@ -20,13 +20,13 @@ public class SumOfNos {
 				return m;
 			}
 
-		 static int SumOfOddNos(int s,int f)
+		  int SumOfOddNumbers(int firstnumber,int lastnumber)
 
 			{
 
 				int i,n=0;
 
-				for(i=s;i<=f;i++)
+				for(i=firstnumber;i<=lastnumber;i++)
 
 				{
 
@@ -40,19 +40,21 @@ public class SumOfNos {
 			}
      public static void main(String[] args) {
 
-			Scanner sc = new Scanner(System.in);
+			Scanner scanner = new Scanner(System.in);
 
-			int b,t;
+			int begin,terminate;
 			
-            b=sc.nextInt();
+            begin=scanner.nextInt();
 
-		    t=sc.nextInt();
+		    terminate=scanner.nextInt();
 
-		    System.out.println("EVEN SUM="+SumOfEvenNos(b,t) );
+	     SumOfNumbers out=new SumOfNumbers();
+	     
+		    System.out.println("EVEN SUM="+out.SumOfEvenNumbers(begin,terminate) );
 
-			System.out.println("ODD SUM="+SumOfOddNos(b,t) );
+			System.out.println("ODD SUM="+out.SumOfOddNumbers(begin,terminate) );
 
-			sc.close();
+			scanner.close();
 		}
 	}
 
