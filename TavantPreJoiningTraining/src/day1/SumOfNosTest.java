@@ -4,18 +4,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class SumOfNosTest {
+class SumOfNumbersTest {
 
 	@Test
 	void test() 
 	{
-		SumOfNos s =new SumOfNos();
+		SumOfNumbers scanner =new SumOfNumbers();
 
-		int output = s.SumOfEvenNos(20, 30);
+		int output = scanner.SumOfEvenNumbers(20, 30);
 
 		assertEquals(150,output);
 
-		int output2 = s.SumOfOddNos(20, 30);
+		int output2 = scanner.SumOfOddNumbers(20, 30);
 
 		assertEquals(125,output2);
 	}
