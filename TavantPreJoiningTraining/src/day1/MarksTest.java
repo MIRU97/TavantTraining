@@ -4,18 +4,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class MarksTest {
+class MarkValidatorTest {
 
 	@Test
 	void test()
 	{
-		Marks m = new Marks();
+		MarkValidator out = new MarkValidator();
 		
-		String output = m.IsPass(80);
+		String output = out.IsPass(80);
 
 		assertEquals("Pass",output);
 
-		String output2 = m.MarkGrade(80);
+		String output2 = out.MarkGrade(80);
 
 		assertEquals("Grade B",output2);
 	}
