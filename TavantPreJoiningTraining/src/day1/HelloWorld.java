@@ -2,7 +2,7 @@ package day1;
 
 public class HelloWorld {
 
- static String  getMessage() {
+  String  getMessage() {
 
 		String Str ="HelloWorld";
 
@@ -10,6 +10,7 @@ public class HelloWorld {
 	}
 	public static void main(String[] args) 
 	{
-		System.out.println(getMessage());
+		HelloWorld output=new HelloWorld();
+		System.out.println(output.getMessage());
 	}
 }
