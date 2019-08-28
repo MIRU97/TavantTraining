@@ -2,9 +2,9 @@ package day1;
 
 import java.util.Scanner;
 
-public class Marks {
+public class MarkValidator {
 
-	public static String IsPass(int p)
+	public String IsPass(int p)
 
 	{
 		if(p>=40) 
@@ -16,7 +16,7 @@ public class Marks {
 		return "Fail";
 	}
 
-	public static String MarkGrade(int p)
+	public String MarkGrade(int p)
 
 	{
 		if(p>=90)
@@ -39,18 +39,20 @@ public class Marks {
 
 	public static void main(String[] args) {
 
-	Scanner sc = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
 
       int m;
 
       System.out.println("Mark=");
 
-      m=sc.nextInt();
+      m=scanner.nextInt();
 
-      System.out.println(IsPass(m));
+      MarkValidator out=new MarkValidator();
+		
+      System.out.println(out.IsPass(m));
 
-      System.out.println(MarkGrade(m));
+      System.out.println(out.MarkGrade(m));
 
-      sc.close();
+      scanner.close();
 	} 
 }
